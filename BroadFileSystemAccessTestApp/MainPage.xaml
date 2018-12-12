@@ -9,7 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock Name="textBlock"></TextBlock>
-        <Button Content="Read File" Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <ScrollViewer Margin="50, 50, 50, 100">
+            <TextBlock Name="textBlock" IsTextSelectionEnabled="True" TextWrapping="Wrap" />
+        </ScrollViewer>
+        <Button Content="File Open" Click="FileOpen_Click"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="-200,0,0,30"/>
+        <Button Content="Folder Open" Click="FolderOpen_Click"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="200,0,0,30"/>
     </Grid>
 </Page>
